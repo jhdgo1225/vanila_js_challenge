@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <title>Momentum - Vanila JS Challenge</title>
+  </head>
+  <body>
+    <header id="special-header">
+      <div class="header-column">
+        <div class="localInfo">
+          <div class="localInfo__weather">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="header-column">
+        <form
+          class="google-search"
+          action="https://www.google.co.kr/search"
+          method="get"
+        >
+          <i class="fab fa-google fa-sm"></i>
+          <input name="query" type="text" />
+          <i class="fas fa-search fa-sm"></i>
+        </form>
+        <div class="another-links">
+          <div class="another-links__link"></div>
+          <div class="another-links__link"></div>
+          <div class="another-links__link"></div>
+        </div>
+      </div>
+    </header>
+    <main id="momentum-main">
+      <div class="momentum-column">
+        <div class="welcome">
+          <h1 class="welcome__clock"></h1>
+          <form class="welcome__user hidden">
+            <input required type="text" placeholder="Please write your name" />
+          </form>
+          <h1 class="welcome__greeting hidden"></h1>
+        </div>
+        <div class="quote">
+          <span>Today's Quote</span>
+        </div>
+      </div>
+      <div class="momentum-column">
+        <div class="btn-for-visible wait-right">
+          <button>
+            <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+          </button>
+        </div>
+        <div class="todo-list wait-right">
+          <form class="todo-list__form">
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+          <ul class="todo-list__list"></ul>
+        </div>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7d0b8f44ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
