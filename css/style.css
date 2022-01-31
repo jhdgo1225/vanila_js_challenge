@@ -37,6 +37,8 @@ body {
 .header-column:last-child {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .google-search {
@@ -91,6 +93,49 @@ body {
 .localInfo__weather span:first-child {
   font-size: 24px;
   margin-bottom: 3px;
+}
+
+.links {
+  display: flex;
+  position: absolute;
+}
+
+.app {
+  left: 0;
+}
+
+.app .link {
+  margin-right: 10px;
+}
+
+.site .link {
+  margin-left: 10px;
+}
+
+.site {
+  right: 0;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1),
+    10px 10px 5px rgba(0, 0, 0, 0.1),
+    inset -4px -4px 5px rgba(255, 255, 255, 0.45);
+  width: 36px;
+  height: 36px;
+}
+
+.link img {
+  width: 25px;
+  height: 25px;
+}
+
+.fa-youtube {
+  color: rgb(200, 50, 50);
 }
 
 #momentum-main {
