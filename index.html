@@ -18,12 +18,12 @@
       </div>
       <div class="header-column">
         <div class="links app">
-          <a class="link">
+          <div class="link calc">
             <i class="fas fa-calculator fa-lg"></i>
-          </a>
-          <a class="link">
+          </div>
+          <div class="link paint">
             <i class="fas fa-palette fa-lg"></i>
-          </a>
+          </div>
         </div>
         <form
           class="google-search"
@@ -77,6 +77,54 @@
           <ul class="todo-list__list"></ul>
         </div>
       </div>
+      <div id="calculator" class="hidden-calc">
+        <div class="calculator-close">
+          <button>
+            <i class="far fa-times-circle fa-3x"></i>
+          </button>
+        </div>
+        <div class="calculator-main">
+          <table>
+            <thead>
+              <tr>
+                <td colspan="4"><input type="text" /></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button class="clear">C</button></td>
+                <td><button class="special">()</button></td>
+                <td><button class="opcode">%</button></td>
+                <td><button class="opcode">/</button></td>
+              </tr>
+              <tr>
+                <td><button class="print">1</button></td>
+                <td><button class="print">2</button></td>
+                <td><button class="print">3</button></td>
+                <td><button class="opcode">+</button></td>
+              </tr>
+              <tr>
+                <td><button class="print">4</button></td>
+                <td><button class="print">5</button></td>
+                <td><button class="print">6</button></td>
+                <td><button class="opcode">-</button></td>
+              </tr>
+              <tr>
+                <td><button class="print">7</button></td>
+                <td><button class="print">8</button></td>
+                <td><button class="print">9</button></td>
+                <td><button class="opcode">*</button></td>
+              </tr>
+              <tr>
+                <td><button class="back">←</button></td>
+                <td><button class="print">0</button></td>
+                <td><button class="opcode">.</button></td>
+                <td><button class="resultBtn">=</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </main>
     <script src="js/app.js"></script>
     <script src="js/clock.js"></script>
@@ -84,6 +132,7 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/calc.js"></script>
     <script
       src="https://kit.fontawesome.com/7d0b8f44ca.js"
       crossorigin="anonymous"
