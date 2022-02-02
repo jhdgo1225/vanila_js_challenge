@@ -1,6 +1,6 @@
 const calculator = document.querySelector("#calculator");
-const openBtn = document.querySelector(".calc");
-const closeBtn = document.querySelector(".calculator-close button");
+const openBtnCalc = document.querySelector(".calc");
+const closeBtnCalc = calculator.querySelector(".module-close button");
 const calcInput = document.querySelector("thead input");
 const printNum = document.querySelectorAll(".print");
 const printOpcode = document.querySelectorAll(".opcode");
@@ -9,11 +9,11 @@ const oneCharDelete = document.querySelector(".back");
 const submitResult = document.querySelector(".resultBtn");
 
 function closeCalc() {
-  calculator.classList.add("hidden-calc");
+  calculator.classList.add(HIDDEN_CLASSNAME);
 }
 
 function openCalc() {
-  calculator.classList.remove("hidden-calc");
+  calculator.classList.remove(HIDDEN_CLASSNAME);
 }
 
 printNum.forEach((rect) => {
@@ -45,5 +45,5 @@ submitResult.addEventListener("click", function () {
   else calcInput.value = eval(calcInput.value);
 });
 
-openBtn.addEventListener("click", openCalc);
-closeBtn.addEventListener("click", closeCalc);
+openBtnCalc.addEventListener("click", openCalc);
+closeBtnCalc.addEventListener("click", closeCalc);
